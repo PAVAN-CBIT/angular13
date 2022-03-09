@@ -1,0 +1,17 @@
+ collection = [ 'A', 'B', 'C' ];
+
+            <ol>
+             <li  *ngFor="let item of collection"> {{ item }} </li>
+            </ol>
+
+            <select>
+              <option *ngFor="let item of collection" [value]="item">
+        {{item}}
+              </option>
+            </select>
+
+            <tbody>
+              <tr *ngFor="let item of collection">
+                <td> {{item}} </td>
+              </tr>
+           </tbody>
